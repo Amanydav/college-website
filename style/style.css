@@ -1,0 +1,613 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Top Section */
+.top {
+    padding: 8px;
+    background-color: rgba(161, 241, 244, 0.603);
+    text-align: center;
+}
+
+.top .txt {
+    color: rgb(88, 112, 250);
+    font-size: 20px;
+}
+/* Navigation Bar */
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f9f9f9;
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-wrap: nowrap; /* Ensure no wrapping */
+}
+
+.nav .item {
+    display: flex;
+    gap: 20px; /* Increased gap for more spacing */
+    flex-wrap: nowrap; /* Ensure no wrapping */
+}
+
+.nav .item a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+    margin-right: 10px; /* Adds extra spacing between links */
+}
+
+.nav .item a:last-child {
+    margin-right: 0; /* Remove margin for the last link */
+}
+
+.nav .item a:hover {
+    color: #007bff; /* Highlighted color for hover state */
+}
+
+.nav .item a:hover::after {
+    width: 100%; /* Underline on hover */
+}
+
+.btn .button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid #007bff;
+    background: transparent;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn .button:hover {
+    background: #007bff;
+    color: white;
+}
+
+
+.logo {
+    text-align: center; /* Center the logo */
+  }
+  
+  .logo img {
+    width: 100%; /* Make the image responsive */
+    max-width: 200px; /* Set a maximum width to prevent it from getting too large */
+    aspect-ratio: 3/2;
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+/* Home Section */
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 20px;
+    min-height: 600px;
+}
+
+.home .main-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.home .main-box .left {
+    flex: 1 1 300px;
+    text-align: center;
+    padding: 20px;
+}
+
+.home .main-box .left h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.home .main-box .left button {
+    padding: 10px 30px;
+    border: none;
+    background: #4eaad1e3;
+    border-radius: 20px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.home .main-box .left button:hover {
+    background: #3a91b8;
+}
+
+.home .main-box .right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Department Section */
+.Department {
+    background-color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.Department .txt {
+    margin-bottom: 20px;
+}
+
+.Department .main-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.Department .main-box .box {
+    flex: 1 1 calc(33.33% - 20px);
+    background: white;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.Department .main-box .box:hover {
+    transform: translateY(-10px);
+}
+
+.Department .main-box .box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.Department .main-box .box .de-name {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Courses Section */
+.course-sec {
+    padding: 30px 20px;
+    background-color: white;
+}
+
+.course-sec .txt {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.course-sec .main-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.course-sec .main-box .box {
+    flex: 1 1 calc(33.33% - 20px);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.course-sec .main-box .box img {
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.course-sec .main-box .box button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    background: #4eaad1e3;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.course-sec .main-box .box button:hover {
+    background: #3a91b8;
+}
+/* Base styles for responsiveness */
+.clg-sec .main-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.clg-sec .box img,
+.clg-sec .box2 img,
+.clg-sec .box3 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* Responsive styles for different screen sizes */
+@media (max-width: 1200px) {
+    .clg-sec .main-box {
+        gap: 15px;
+    }
+
+    .clg-sec .box {
+        flex: 1 1 100%; /* Full-width images */
+    }
+
+    .clg-sec .main-box {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .clg-sec .box2, .clg-sec .box3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .clg-sec .box2 img, .clg-sec .box3 img {
+        flex: 1;
+        max-width: calc(50% - 10px); /* Images take half width each */
+    }
+}
+
+@media (max-width: 768px) {
+    .clg-sec .main-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .clg-sec .main-box {
+        gap: 10px;
+    }
+
+    .clg-sec .box2 img, .clg-sec .box3 img {
+        max-width: 100%; /* Images stack vertically */
+    }
+}
+
+@media (max-width: 480px) {
+    .clg-sec {
+        padding: 20px 10px;
+    }
+
+    .clg-sec .txt h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .clg-sec .txt p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .clg-sec .box2 img, .clg-sec .box3 img {
+        width: 100%; /* Full-width images on small screens */
+    }
+}
+
+
+/* Footer Section */
+.foot-sec {
+    padding: 30px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.foot-sec .main-txt-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.foot-sec .main-txt-box div {
+    flex: 1 1 200px;
+    padding: 10px;
+    text-align: center;
+}
+
+.foot-sec .main-txt-box div p,
+.foot-sec .main-txt-box div a {
+    color: rgb(109, 109, 109);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.foot-sec .main-txt-box div a {
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.foot-sec .main-txt-box div a:hover {
+    color: #4eaad1e3;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .home .main-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav {
+        justify-content: center;
+    }
+
+    .Department .main-box .box,
+    .course-sec .main-box .box {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+.foot-sec {
+    padding: 30px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.foot-sec .main-txt-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;  /* Aligns items with space between them */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.foot-sec .main-txt-box div {
+    flex: 1 1 200px;
+    padding: 10px;
+    text-align: center;
+}
+
+.foot-sec .main-txt-box div p,
+.foot-sec .main-txt-box div a {
+    color: rgb(109, 109, 109);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.foot-sec .main-txt-box div a {
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.foot-sec .main-txt-box div a:hover {
+    color: #4eaad1e3;
+}
+
+/* Media Query for small devices (Max-width 768px) */
+
+/* Responsive for tablet (768px and below) */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column; /* Stack navigation vertically */
+        align-items: flex-start; /* Align items to the left */
+        padding: 10px 20px; /* Adjust padding */
+    }
+
+    .nav .item {
+        flex-direction: column; /* Stack links vertically */
+        gap: 10px; /* Reduce gap between links */
+        width: 100%; /* Full width for better spacing */
+    }
+
+    .nav .item a {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Responsive for mobile (480px and below) */
+@media (max-width: 480px) {
+    .nav {
+        padding: 8px 15px; /* Further reduce padding */
+    }
+
+    .nav .item a {
+        font-size: 12px; /* Smaller font size for mobile */
+        text-align: left; /* Align text to the left */
+    }
+}
+@media (max-width: 768px) {
+    .foot-sec .main-txt-box {
+        flex-direction: column;  /* Stack content vertically */
+        align-items: center;  /* Center align the stacked items */
+        gap: 30px;  /* Increase gap for better spacing */
+    }
+
+    .foot-sec .main-txt-box div {
+        flex: 1 1 100%;  /* Allow divs to take full width in stacked layout */
+        padding: 15px;  /* Increase padding for better touch targets on small screens */
+    }
+
+    .foot-sec .main-txt-box div p,
+    .foot-sec .main-txt-box div a {
+        font-size: 16px;  /* Make text slightly larger for readability */
+    }
+}
+
+/* Media Query for smaller devices (Max-width 480px) */
+@media (max-width: 480px) {
+    .nav .item a {
+        font-size: 14px;  /* Reduce font size of nav items for small screens */
+    }
+
+    .home .main-box .left h1 {
+        font-size: 1.5rem;  /* Adjust font size for small screens */
+    }
+
+    .foot-sec .main-txt-box div {
+        flex: 1 1 100%;  /* Force divs to stack vertically and take full width */
+        padding: 15px;  /* Extra padding for small screen usability */
+    }
+
+    .foot-sec .main-txt-box div p,
+    .foot-sec .main-txt-box div a {
+        font-size: 14px;  /* Slightly smaller text on the smallest screens */
+    }
+}
+
+/* Media Query for large screens (Min-width 1800px and Max-width 2400px) */
+@media (min-width: 1800px) and (max-width: 2400px) {
+    body {
+        font-size: 18px;
+    }
+
+    .home .main-box {
+        max-width: 1600px;
+        gap: 100px;  /* Increase gap between main sections for larger screens */
+    }
+
+    .home .main-box .left h1 {
+        font-size: 4rem;  /* Increase heading size for large screens */
+    }
+
+    .nav .item a {
+        font-size: 22px;  /* Increase font size of nav items for large screens */
+    }
+
+    .Department .main-box .box {
+        flex: 1 1 calc(25% - 20px);  /* 4 items per row for larger screens */
+    }
+
+    .course-sec .main-box .box {
+        flex: 1 1 calc(25% - 20px);  /* Adjust for larger screens */
+    }
+
+    .foot-sec .main-txt-box {
+        gap: 40px;  /* Increase gap for spacing on large screens */
+    }
+}
+
+
+/* General styling */
+.txt2, .txt3 {
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.txt2 h1, .txt3 h1 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.item a {
+    display: block;
+    color: rgb(109, 109, 109);
+    font-size: 14px;
+    line-height: 1.8;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: color 0.3s ease-in-out;
+}
+
+.item a:hover {
+    color: #4eaad1e3;
+}
+
+/* Flexbox layout for medium to large screens */
+.item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.item a {
+    flex: 1 1 150px;  /* Allow items to wrap and be flexible */
+}
+
+/* Responsive Design for smaller devices */
+@media (max-width: 768px) {
+    .txt2 h1, .txt3 h1 {
+        font-size: 1.5rem;
+    }
+
+    .item {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .item a {
+        flex: 1 1 100%;  /* Make each link take full width */
+        font-size: 16px;  /* Adjust font size for better readability */
+    }
+}
+
+@media (max-width: 480px) {
+    .txt2 h1, .txt3 h1 {
+        font-size: 1.3rem;
+    }
+
+    .item {
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .item a {
+        font-size: 14px;  /* Adjust font size for the smallest screens */
+    }
+}
+/* General styling */
+.copy {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-size: 14px;
+    color: rgb(109, 109, 109);
+}
+
+.copy .deve {
+    color: #4eaad1e3;
+    font-weight: bold;
+}
+
+.copy p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .copy p {
+        font-size: 16px; /* Slightly larger font size on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .copy p {
+        font-size: 14px; /* Reduce font size for mobile */
+    }
+}

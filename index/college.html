@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Application Form</title>
+    <link rel="stylesheet" href="../style/college.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>College Application Form</h2>
+        <form id="collegeForm">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="course">Course</label>
+                <select id="course" name="course" required>
+                    <option value="" disabled selected>Select your desired course</option>
+                    <option value="Biology">Biology</option>
+                    <option value="MedicalDiploma">Medical Diploma</option>
+                    <option value="Economics">Economics</option>
+                    <option value="Engineering">Engineering</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Technology">Technology</option>
+                    <option value="Research">Research</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+
+    <script>
+    document.getElementById('collegeForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+    
+    // Form validation or any processing logic can go here
+    
+    alert('Form Submitted!'); // Show alert message
+    
+    // Redirect to the login page (or any other page after form submission)
+    window.location.href = 'index.html'; // Adjust path according to your folder structure
+});
+
+
+    </script>
+</body>
+</html>
